@@ -31,10 +31,11 @@ Then, you can extend for additional staff types like contractor etc. and calcula
 
 
 class Type(ABC):
-    @abstractmethod
     """
     In the abstract class, we define the function that is crucial for extending the component "Salary Calculation for various types of staff" 
     """
+    @abstractmethod
+
     def calculate_salary(self):
         pass
 
