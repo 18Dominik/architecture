@@ -26,6 +26,7 @@ class SalaryCalculator:
 
 """
 To make this adherent to the OCP, you can use polymorphism and abstractions
+Then, you can extend for additional staff types like contractor etc. and calculate their salarries without having to modify the existing classes
 """
 
 
@@ -40,12 +41,28 @@ class FullTimeEmployee1(Type):
         self.bonus = 0.5
         self.pension = 2000
 
-    def calculate_salary(self, type):
-        return type.salary* (type.bonus+1)
+    def calculate_salary(self):
+        return self.salary*(1+self.bonus)
 
 class PartTimeEmployee1(Type):
-    def __init__(self, salary, ):
+    def __init__(self, salary):
         self.salary = 500
 
+    def calculate_salary(self):
+        return self.salary
+
+class SalaryCalculator1:
     def calculate_salary(self, type):
-        return type.salary
+        return type.calculate_salary()      
+
+# Usage
+bob = FullTimeEmployee1(9000, 0.2)
+alice = PartTimeEmployee1(5000)
+
+calculator = SalaryCalculator1()
+
+salary_bob = calculator.calculate_salary(bob)
+salary_alice = calculator.calculate_salary(alice)
+
+print(f"Salary of Bob: {salary_bob}")
+print(f"Salary of Alice: {salary_alice}")        
