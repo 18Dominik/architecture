@@ -26,12 +26,15 @@ class SalaryCalculator:
 
 """
 To make this adherent to the OCP, you can use polymorphism and abstractions
-Then, you can extend for additional staff types like contractor etc. and calculate their salarries without having to modify the existing classes
+Then, you can extend for additional staff types like contractor etc. and calculate their salarries without having to modify the existing classes.
 """
 
 
 class Type(ABC):
     @abstractmethod
+    """
+    In the abstract class, we define the function that is crucial for extending the component "Salary Calculation for various types of staff" 
+    """
     def calculate_salary(self):
         pass
 
