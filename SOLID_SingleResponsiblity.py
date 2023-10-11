@@ -1,5 +1,5 @@
 # Demonstrating the SOLID Principles
-# Single Responsibility Principle/Separation of Concern Principle: -> a component/class should only have ONE reason to change
+## Single Responsibility Principle/Separation of Concern Principle: -> a component/class should only have ONE reason to change
 
 
 class Meal:
@@ -31,7 +31,7 @@ print("The tax for meal %s with net price %d Euro plus %.2f taxrate is %.2f." % 
     pizza.title, pizza.price, pizza.taxrate, pizza.calctax()))
 print(f"The tax for meal {pizza.title} with net price {pizza.price} Euro plus {
       pizza.taxrate} taxrate is {pizza.calctax()}")  # otion 2 string formatting: f-string
-
+###
 # The problem with this class Meal in terms of single responsibility principle is: it mixex constant and internally set meal attributes (title, price) with dynamic and externally set meal attributes (taxrate). We want to avoid chaning the whole meal class whenever a taxrate changes or the tax calculation changes a whole. Therefore we separate tax calculation and meal class.
 ###############################
 #Singe Responsibility Principle
@@ -72,7 +72,9 @@ class TaxCalculator:
         """
         Calculate tax based on getPrice function from class Meal1 and tax rates.
         """
-        tax_rate = TaxRates[self.meal.getTitle()] # Get the tax rate from the dictionary
+        #tax_rate = TaxRates[self.meal.getTitle()] # Get the tax rate from the dictionary
+        tax_rate = self.tax_rates.get(self.meal.getTitle(), 0)  # Get the tax rate from the dictionary
+
         tax = self.meal.getPrice() * tax_rate
         return tax
 
