@@ -45,13 +45,15 @@ class FullTimeEmployee1(Type):
         self.bonus = 0.5
         self.pension = 2000
 
+    # overriding abstract method
     def calculate_salary(self):
         return self.salary*(1+self.bonus)
 
 class PartTimeEmployee1(Type):
     def __init__(self, salary):
         self.salary = 500
-
+        
+    # overriding abstract method
     def calculate_salary(self):
         return self.salary
 
