@@ -22,6 +22,7 @@ Source: https://accesto.com/blog/solid-php-solid-principles-in-php/
 
 ### Dependency Inversion Principle (DIP)
 ![image](https://github.com/18Dominik/architecture/assets/35842490/30fb47da-5a07-49eb-8a0d-d905496cfaea)
+
 Source: https://blog.devgenius.io/dependency-injection-and-dependency-inversion-5585dd2b19fd?gi=4cc720d8abef
 
 ![image](https://github.com/18Dominik/architecture/assets/35842490/364dfb0a-3207-4acb-9da0-e24d176b107e)
