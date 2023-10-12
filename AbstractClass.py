@@ -4,8 +4,10 @@
 
 
 # An abstract class can be considered a blueprint for other classes. An Abstract class cannot be instantiated on its own. 
+# Abstract classes can have fields (instance variables) that can be inherited by subclasses.
 
 # There are only slight difference in the terms "Abstract Class" and "Interface". Likely the biggest difference is that abstract classes can have fields (instance variables) and interfaces do not.  
+# In an interface you can not implement any of the declared methods. Only the class that "implements" the interface can implement the methods (compare keywords "extends" -> Inheritance and "implements" -> Interface in Java Code).
 #"An interface is always an abstract class, but an abstract class is not always an interface."
 
 # It allows you to create a set of methods that must be created within any child classes built from the abstract class. 
