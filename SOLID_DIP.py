@@ -13,8 +13,11 @@
 ## -> The dependency is inverted to: Components who are offering functionalities depend on componentes who are using functionalities
 ##promotes loose coupling and emphasizes the use of interfaces or abstract classes to decouple high-level and low-level components.
 
-#Dependecy Injection: The main idea follows the dependency inversion principle.
-#Dependency Injection: Defer dependency-resolution from compile-time to runtime
+#Dependecy Injection: 
+##The main idea follows the dependency inversion principle.
+##Defer dependency-resolution from compile-time to runtime
+##In software engineering, dependency injection is a programming technique in which an object or function receives other objects or functions that it requires, 
+# as opposed to creating them internally
 
 from abc import ABC, abstractmethod
 
