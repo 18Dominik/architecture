@@ -19,6 +19,9 @@
 ##In software engineering, dependency injection is a programming technique in which an object or function receives other objects or functions that it requires, 
 # as opposed to creating them internally
 
+#What is Dependency Injection (DI) and Inversion of Control (IoC)?
+##Dependency Injection (DI) is a practical technique that implements Dependency Inversion Principle (DIP) and Inversion of Control (IoC). It involves providing the dependent components (usually services, functions,  or objects) to a class or component rather than having the class create them itself.
+## Excursion to IoC: Inversion of control (IoC) is simply providing a callback (reaction) to an event that might happen in a system. In other words, instead of executing some logic directly, we invert the control to that callback whenever a specific event occurs.
 from abc import ABC, abstractmethod
 
 # Abstraction for SalaryCalculator
@@ -44,13 +47,13 @@ class HourlySalaryCalculator(SalaryCalculator):
         return employee.hourly_rate * employee.hours_worked        
 
 # High-level module for managing employees and their salaries
-class EmployeeManager:
+class EmployeeManager: # Dependency Injector
     """
     The high-level module, EmployeeManager, accepts a SalaryCalculator object in its constructor, making it dependent on the SalaryCalculator interface rather than concrete details.
     The EmployeeManager uses the injected salary_calculator object to calculate an employee's salary. 
     By switching the implementation of salary_calculator, you can easily change how salaries are calculated without modifying the EmployeeManager.
     """
-    def __init__(self, salary_calculator): # At run-time: dependency injection of SalaryCalculator
+    def __init__(self, salary_calculator): # At run-time: dependency injection of SalaryCalculator: Instead of creating the SalaryCalculator instance inside EmployeeManager, it is provided as a parameter.
         self.salary_calculator = salary_calculator
 
     def calculate_employee_salary(self, employee): 
