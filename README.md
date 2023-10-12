@@ -1,5 +1,5 @@
 # architecture
-This repo focuses on some architecture principles
+This repo focuses on some architectural principles
 
 ## SOLID
 SOLID, this acronym was coined by Michael Feathers, it represents the five basic principles of object-oriented programming developed by Uncle Bob (https://blog.cleancoder.com/).
