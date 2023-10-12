@@ -14,7 +14,7 @@ class FullTimeEmployee:
         self.pension = 2000
 
 class PartTimeEmployee:
-    def __init__(self, salary, ):
+    def __init__(self, salary):
         self.salary = 500
 
 class SalaryCalculator:

@@ -1,5 +1,5 @@
 # Demonstrating the SOLID Principles
-## Dependency Inversion Principle (DIP): DIP advises NOT to depend on low-level details, but rather to dependo n abstractions.
+## Dependency Inversion Principle (DIP): DIP advises NOT to depend on low-level details, but rather to depend on abstractions.
 ## High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g. interfaces) 
 
 # ###-> client components should depend on abstractions, not on implementers.###
@@ -50,10 +50,10 @@ class EmployeeManager:
     The EmployeeManager uses the injected salary_calculator object to calculate an employee's salary. 
     By switching the implementation of salary_calculator, you can easily change how salaries are calculated without modifying the EmployeeManager.
     """
-    def __init__(self, salary_calculator):
+    def __init__(self, salary_calculator): # At run-time: dependency injection of SalaryCalculator
         self.salary_calculator = salary_calculator
 
-    def calculate_employee_salary(self, employee):
+    def calculate_employee_salary(self, employee): 
         return self.salary_calculator.calculate_salary(employee)
 
 # Employee class
