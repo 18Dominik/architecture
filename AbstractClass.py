@@ -30,3 +30,79 @@ x.make_bread()
 #========================
 #this is base bread
 #this is a delicious toast
+
+
+###
+#Another Example#
+###
+###With Abstract Class###
+from abc import ABC, abstractmethod
+
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Vehicle(ABC):
+    def __init__(self, engine):
+        self.engine = engine
+
+    @abstractmethod
+    def start(self):
+        pass
+
+class Car(Vehicle):
+    def start(self):
+        self.engine.start()
+        print("Car is starting")
+
+    def drive(self):
+        print("Car is driving")
+
+class Motorcycle(Vehicle):
+    def start(self):
+        self.engine.start()
+        print("Motorcycle is starting")
+    
+    def ride(self):
+        print("Motorcycle is riding")
+#Usage
+engine = Engine()
+car = Car(engine)
+car.start()
+car.drive()
+
+motorcycle = Motorcycle(engine)
+motorcycle.start()
+motorcycle.ride()
+
+
+###Without Abstract Class, this Example looks like:###
+
+class Engine0:
+    def start(self):
+        print("Engine started")
+
+class Vehicle0:
+    def __init__(self, engine):
+        self.engine = engine
+
+    def start(self):
+        self.engine.start()
+
+class Car0(Vehicle0):
+    def drive(self):
+        print("Car is driving")
+
+class Motorcycle0(Vehicle0):
+    def ride(self):
+        print("Motorcycle is riding")
+
+engine = Engine()
+car = Car0(engine)
+car.start()
+car.drive()
+
+motorcycle = Motorcycle0(engine)
+motorcycle.start()
+motorcycle.ride()
+
