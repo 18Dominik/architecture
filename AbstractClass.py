@@ -3,7 +3,11 @@
 # such as with plugins, but can also help you when working in a large team or with a large code base where keeping all classes in your mind is difficult or not possible. 
 
 
-# An abstract class can be considered a blueprint for other classes. 
+# An abstract class can be considered a blueprint for other classes. An Abstract class cannot be instantiated on its own. 
+
+# There are only slight difference in the terms "Abstract Class" and "Interface". Likely the biggest difference is that abstract classes can have fields (instance variables) and interfaces do not.  
+#"An interface is always an abstract class, but an abstract class is not always an interface."
+
 # It allows you to create a set of methods that must be created within any child classes built from the abstract class. 
 # A class that contains one or more abstract methods is called an abstract class. 
 # An abstract method is a method that has a declaration but does not have an implementation. 
@@ -97,6 +101,7 @@ class Motorcycle0(Vehicle0):
     def ride(self):
         print("Motorcycle is riding")
 
+#Usage
 engine = Engine()
 car = Car0(engine)
 car.start()

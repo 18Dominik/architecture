@@ -25,7 +25,8 @@ motorcycle = Motorcycle_I()
 motorcycle.start()
 motorcycle.ride()
 ########################
-#In this example, we use composition. The Car and Motorcycle classes have an instance of the Engine class as an attribute. 
+#In this example, we use composition. 
+# The Car and Motorcycle classes have an instance of the Engine class as an attribute. 
 # This allows them to access the engine's start method by delegating the call to the engine object. 
 # This approach provides more flexibility and avoids issues like having an engine for vehicles that shouldn't have one.
 
@@ -33,7 +34,7 @@ class Engine:
     def start(self):
         print("Engine started")
 
-class Vehicle:
+class Vehicle: # see "AbstractClass.py" to distinguish Vehicle being a super class or being declared as abstract class
     def __init__(self, engine): #here we give an instance of the Engine class
         self.engine = engine
 
@@ -56,3 +57,5 @@ car.drive()
 motorcycle = Motorcycle(engine)
 motorcycle.start()
 motorcycle.ride()
+
+###
