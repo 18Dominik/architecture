@@ -32,7 +32,7 @@ class EmailClient:
         """principle of composition over inheritance. 
         In object-oriented design, composition is a way of building complex functionality by combining smaller, more focused classes (or objects) rather than using inheritance to create a hierarchy.
         """
-        self.sender = sender
+        self.sender = sender # Composite "EmailClient" HAS A Component "EmailSender"
 
     def send_email(self, recipient, subject, message):
         self.sender.send_email(recipient, subject, message)
@@ -47,6 +47,7 @@ rest_api_client = EmailClient(rest_api_sender)
 smtp_client.send_email("recipient@example.com", "Hello", "This is an email sent via SMTP.")
 rest_api_client.send_email("recipient@example.com", "Hello", "This is an email sent via REST API.")
 
+#Inhertitance vs. Composition:
 #Inheritance, creates a tight coupling between classes, making them less flexible and more challenging to extend or modify. 
 # Composition, as demonstrated in the code, promotes a more modular and flexible design.
 
