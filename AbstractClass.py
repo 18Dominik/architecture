@@ -82,7 +82,7 @@ motorcycle.start()
 motorcycle.ride()
 
 
-###Without Abstract Class, this Example looks like:###
+###Without Abstract Class and only normal inheritance (super-class, sub-class), this Example looks like:###
 
 class Engine0:
     def start(self):
