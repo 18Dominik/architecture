@@ -27,6 +27,12 @@ Source: https://www.linkedin.com/pulse/dependency-inversion-principledip-mamata-
 ![image](https://github.com/18Dominik/architecture/assets/35842490/2da0b140-5835-4f28-8af1-5286beb3b9bd)
 Source: https://www.linkedin.com/pulse/dependency-inversion-principledip-mamata-raote-she-her-/
 
+## Interface Design: Composition over Inheritance
+![image](https://github.com/18Dominik/architecture/assets/35842490/5bae169e-c286-40fb-9338-3cf3984e40cf)
+Source: https://medium.com/@kamilmasyhur/a-principle-of-object-oriented-design-79b9bfefd446
+
+
+
 
 
 
