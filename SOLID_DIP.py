@@ -13,6 +13,9 @@
 ## -> The dependency is inverted to: Components who are offering functionalities depend on componentes who are using functionalities
 ##promotes loose coupling and emphasizes the use of interfaces or abstract classes to decouple high-level and low-level components.
 
+#Dependecy Injection: The main idea follows the dependency inversion principle.
+#Dependency Injection: Defer dependency-resolution from compile-time to runtime
+
 from abc import ABC, abstractmethod
 
 # Abstraction for SalaryCalculator
@@ -76,3 +79,57 @@ salary2 = employee_manager_hourly.calculate_employee_salary(employee2)
 
 print(f"{employee1.name}'s salary: ${salary1}")
 print(f"{employee2.name}'s salary: ${salary2}")
+
+
+
+
+
+#####
+#In contrast, the code below contradicts the dependency inversion principle
+###
+# High-level module for managing employees and their salaries
+class EmployeeManager0:
+    def __init__(self):
+        pass
+
+    def calculate_employee_salary(self, employee):
+        return FixedSalaryCalculator0.calculate_salary(employee)  # Directly depending on a specific low-level module
+
+# Low-level module for calculating salaries based on a fixed rate
+class FixedSalaryCalculator0:
+    @staticmethod
+    def calculate_salary(employee):
+        return 50000  # A fixed salary for all employees
+
+# Low-level module for calculating salaries based on hourly rate and hours worked
+class HourlySalaryCalculator0:
+    @staticmethod
+    def calculate_salary(employee):
+        return employee.hourly_rate * employee.hours_worked
+
+# Employee class
+class Employee0:
+    def __init__(self, name, hourly_rate=0, hours_worked=0):
+        self.name = name
+        self.hourly_rate = hourly_rate
+        self.hours_worked = hours_worked
+
+# Usage
+employee_manager = EmployeeManager0()
+
+employee1 = Employee("Alice")
+employee2 = Employee("Bob", hourly_rate=15, hours_worked=160)
+
+salary1 = employee_manager.calculate_employee_salary(employee1)
+salary2 = employee_manager.calculate_employee_salary(employee2)
+
+print(f"{employee1.name}'s salary: ${salary1}")
+print(f"{employee2.name}'s salary: ${salary2}")
+
+# In this example:
+
+# The high-level module EmployeeManager directly depends on the low-level modules FixedSalaryCalculator and HourlySalaryCalculator for salary calculations. It doesn't use an abstraction or interface (SalaryCalculator), violating the Dependency Inversion Principle.
+
+# The EmployeeManager class directly calls the static methods of the low-level salary calculators, making it tightly coupled to specific implementations.
+
+# This design goes against the Dependency Inversion Principle, as the high-level module directly relies on low-level details, making it less flexible and harder to switch between different salary calculation mechanisms.
