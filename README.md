@@ -1,4 +1,4 @@
-# architecture
+# Architecture
 This repo focuses on some architectural principles
 
 ## SOLID
@@ -76,6 +76,11 @@ factory method allows a class to delegate the creation of objects to subclasses.
 - Coupling via data types
 - Coupling via data (e.g. database between a write and a read component)
 - Coupling via hardware (e.g. encryption and storing encryption key)
+
+## Deployment Strategies
+https://thenewstack.io/deployment-strategies/
+![image](https://github.com/18Dominik/architecture/assets/35842490/65443936-0a5e-4fb4-9b0d-b9c6a569e6a3)
+
 
 
 ## Books
