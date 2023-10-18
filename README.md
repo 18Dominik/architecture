@@ -69,6 +69,13 @@ factory method allows a class to delegate the creation of objects to subclasses.
   ![image](https://github.com/18Dominik/architecture/assets/35842490/950cf7f7-c637-4cfc-8620-b1df800cbeff)
 
   Source: https://refactoring.guru/design-patterns/factory-method
+  
+### Other types of coupling
+- Messages or Events (Asynchronous Communication). Also see 'Promises' for asynchronous programming in JavaScript (Callback function -> Promises -> Async/Await (https://www.w3schools.com/js/js_asynchronous.asp))
+- Temporal Coupling
+- Coupling via data types
+- Coupling via data (e.g. database between a write and a read component)
+- Coupling via hardware (e.g. encryption and storing encryption key)
 
 
 ## Books
