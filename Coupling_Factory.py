@@ -10,12 +10,12 @@ class Vehicle:
         pass
 
 class Car(Vehicle): #inherit from vehicle -> implement display_info()
-    def display_info(self):
+    def display_info(self): #override function and adjust for car specifications
         return "I am a Car"
 
 class Motorcycle(Vehicle): #inherit from vehicle -> implement display_info()
-    def display_info(self):
-        return "I am a Motorcycle"
+    def display_info(self): #override function and adjust for motorcycle specifications
+        return "I am a Motorcycle" 
 
 class VehicleFactory:
     '''
