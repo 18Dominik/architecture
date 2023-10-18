@@ -39,6 +39,7 @@ Article on the relationship between Dependency Inversion Principle (DIP), Invers
 https://martinfowler.com/articles/dipInTheWild.html#YouMeanDependencyInversionRight
 - DI is about how one object acquires a dependency. When a dependency is provided externally, then the system is using DI.
 - IoC is about who initiates the call. If the container/system/library calls back into code that you provided it, is it IoC.
+- DI is about wiring, IoC is about direction, and DIP is about shape
 
 ![image](https://github.com/18Dominik/architecture/assets/35842490/364dfb0a-3207-4acb-9da0-e24d176b107e)
 
