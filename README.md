@@ -72,7 +72,7 @@ factory method allows a class to delegate the creation of objects to subclasses.
   
 ### Other types of coupling
 - Messages or Events (Asynchronous Communication). Also see 'Promises' for asynchronous programming in JavaScript (Callback function -> Promises -> Async/Await (https://www.w3schools.com/js/js_asynchronous.asp))
-- Temporal Coupling
+- Temporal Coupling: If component A can only perform a task if another component B has completed another task, then A temporarily depends on B, e.g. Authentication in online banking system before performing banking transfers
 - Coupling via data types
 - Coupling via data (e.g. database between a write and a read component)
 - Coupling via hardware (e.g. encryption and storing encryption key)
