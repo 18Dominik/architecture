@@ -56,7 +56,7 @@ class Car1:
 
 # Usage
 ## Creating an Engine instance
-car_engine = Engine1() # We create an Engine instance separately and inject it into the Car instance when we create the Car. # as an alternative, use 'car_engine=ElectricMotor1()'
+car_engine = Engine1() # We create an Engine instance separately and inject it into the Car instance when we create the Car. # as an alternative, use 'car_engine=ElectricMotor1()'. You can easily switch between 'Engine' and 'ElectricMotor' without chaning the 'Car' class.
 
 ## Creating a Car instance and injecting the Engine instance
 my_car = Car1(car_engine)
