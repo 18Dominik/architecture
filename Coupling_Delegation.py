@@ -7,14 +7,17 @@ class Engine:
     def start(self):
         print("Engine starts")
     
-
+class ElectricMotor:
+    def start(self):
+        print("Electric Motor starts")
+    
 class Car:
     '''
     The Car class has a tight coupling with the Engine class. 
     It creates an instance of the Engine class inside its constructor and directly calls the start method of the Engine instance within its own start method.
     '''
     def __init__(self):
-        self.engine = Engine() # Car class tightly couples itself to the Engine class.  If you were to change the Engine class or use a different engine type, you would need to modify the Car class. This makes the code less flexible and harder to maintain. 
+        self.engine = Engine() # Car class tightly couples itself to the Engine class (and its specific implementation).  If you were to change the Engine class or use a different engine type (e.g. electric motor), you would need to modify the Car class (self.engine=ElectricMotor() instead of self.engine=Engine(). This makes the code less flexible and harder to maintain. 
     
     def start(self):
         print("Car is starting the engine")
