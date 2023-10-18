@@ -1,6 +1,6 @@
 # A usage or delegation is a method or function call that originiates in one component and is handled by another
 
-# 1. Very bad: Component 'Car' uses some interal details of Component 'Engine'. If these details of 'Engine' are ever modified, then 'Car' is likely to break
+## 1. Very bad: Component 'Car' uses some interal details of Component 'Engine'. If these details of 'Engine' are ever modified, then 'Car' is likely to break
 
 
 class Engine:
@@ -31,7 +31,7 @@ my_car.start()
 
 ###########
 
-# 2: Better: Dependency Injection (DI) allows you to inject a specific engine into the Car class, reducing the coupling and making it easier to replace or extend components without modifying the Car class.
+## 2: Better: Dependency Injection (DI) allows you to inject a specific engine into the Car class, reducing the coupling and making it easier to replace or extend components without modifying the Car class.
 
 
 class Engine1:
