@@ -5,22 +5,31 @@ This repo focuses on some architectural principles
 SOLID, this acronym was coined by Michael Feathers, it represents the five basic principles of object-oriented programming developed by Uncle Bob (https://blog.cleancoder.com/).
 
 ### Single Responsibility Principle
+A class should have only one reason to change.
+
 ![image](https://github.com/18Dominik/architecture/assets/35842490/8fd27e22-cd7b-4bf9-ad9c-ac6fd3c81d96)
 Source: https://accesto.com/blog/solid-php-solid-principles-in-php/
 
 ### Open/Closed Principle
+Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+
 ![image](https://github.com/18Dominik/architecture/assets/35842490/c582ea2e-f034-4bea-b6e3-8f9d23c2895e)
 Source: https://accesto.com/blog/solid-php-solid-principles-in-php/
 
 ### Liskov Substitution Principle
+Subtypes must be substitutable for their base types without altering the correctness of the program.
+
 ![image](https://github.com/18Dominik/architecture/assets/35842490/7f0c07a3-8c69-4b07-a6aa-a8313c98b1e3)
 Source: https://accesto.com/blog/solid-php-solid-principles-in-php/
 
 ### Interface Segregation Principle (ISP)
+Clients should not be forced to depend on interfaces they do not use.
+
 ![image](https://github.com/18Dominik/architecture/assets/35842490/5ac05c4d-f3a4-40fd-8d57-7cfc1e31cbac)
 Source: https://accesto.com/blog/solid-php-solid-principles-in-php/
 
 ### Dependency Inversion Principle (DIP)
+High-level modules should not depend on low-level modules. Both should depend on abstractions. Furthermore, abstractions should not depend on details. Details should depend on abstractions.
 Aims to reduce coupling between high-level and low-level modules/concrete implementation in software systems by inverting the traditional dependency hierarchy
 -  High-Level Modules Should Not Depend on Low-Level Modules/concrete implementation. Instead, both should depend on abstractions (Inversion of dependencies)
 -  Abstractions (e.g. via interfaces or abstract classes) over Implementations
@@ -80,8 +89,6 @@ factory method allows a class to delegate the creation of objects to subclasses.
 ## Deployment Strategies
 https://thenewstack.io/deployment-strategies/
 ![image](https://github.com/18Dominik/architecture/assets/35842490/65443936-0a5e-4fb4-9b0d-b9c6a569e6a3)
-
-
 
 ## Books
 ### Design Patterns: Elements of Reusable Object-Oriented Software
