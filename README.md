@@ -2,7 +2,7 @@
 This repo focuses on some architectural principles
 
 ## SOLID
-SOLID, this acronym was coined by Michael Feathers, it represents the five basic principles of object-oriented programming developed by Uncle Bob (https://blog.cleancoder.com/).
+SOLID, this acronym was coined by Michael Feathers, it represents the five basic principles of object-oriented programming developed by Robert C. Martin (Uncle Bob) (https://blog.cleancoder.com/).
 
 ### Single Responsibility Principle
 A class should have only one reason to change.
