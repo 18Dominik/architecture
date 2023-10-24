@@ -90,6 +90,23 @@ factory method allows a class to delegate the creation of objects to subclasses.
 https://thenewstack.io/deployment-strategies/
 ![image](https://github.com/18Dominik/architecture/assets/35842490/65443936-0a5e-4fb4-9b0d-b9c6a569e6a3)
 
+## Architecture Documentation
+[arc42]([https://pages.github.com/](https://www.arc42.de/overview/)) offers an easy-to-use template for software architecture documentation.
+1. Introduction & Goals: Short description of requirements, Top 3-5 quality requirements of architecture, list of most important stakeholders and their expectations
+2. Constraints: Everything that is constraining the design and development
+3. Context: Delimiting the context from the system's environment
+4. Solution Strategy: Summary of fundamental design decisions
+5. Building Blocks Layer: Abstraction of source code as a hierarchy of white boxes and (and black boxes) up to appropriate detail level
+6. Run-Time Layer: Behaviour of building blocks within dynamic scenarios, considering the most important processes/interactions
+7. Distribution Layer: Technical Infrastructure including real and virtual processors
+8. Crosscutting Concepts: Generic principles that are re-used in different parts (Domain Model, Patterns, Persistence, UI/UX, Logging)
+9. Architecture Decisions: Important, critical, risky, or expensive architecture decisions
+10. Quality Requirements: Showcasing scenarios with a quality tree according to Chapter 1 (quality requirements)
+11. Risks and technical debts: Known risks and technical debts
+12. Glossary: Most important domain-specific language, stakeholder-oriented, translations in multi-lingual environments
+![image](https://github.com/18Dominik/architecture/assets/35842490/0bcac792-b889-44af-9714-673f34a80f92)
+
+
 ## Books
 ### Design Patterns: Elements of Reusable Object-Oriented Software
 Authors: Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
