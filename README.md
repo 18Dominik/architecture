@@ -96,7 +96,7 @@ https://thenewstack.io/deployment-strategies/
 2. Constraints: Everything that is constraining the design and development
 3. Context: Delimiting the context from the system's environment
 4. Solution Strategy: Summary of fundamental design decisions
-5. Building Blocks Layer: Abstraction of source code as a hierarchy of white boxes and (and black boxes) up to appropriate detail level
+5. Building Blocks Layer: Abstraction of source code as a hierarchy of white boxes and (and black boxes) up to the appropriate detail level
 6. Run-Time Layer: Behaviour of building blocks within dynamic scenarios, considering the most important processes/interactions
 7. Distribution Layer: Technical Infrastructure including real and virtual processors
 8. Crosscutting Concepts: Generic principles that are re-used in different parts (Domain Model, Patterns, Persistence, UI/UX, Logging)
