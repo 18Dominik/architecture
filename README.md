@@ -112,6 +112,9 @@ https://thenewstack.io/deployment-strategies/
 Authors: Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
 https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/
 
+### arc42
+https://docs.arc42.org/home/
+
 ## Mock Exam
 isaqb cpsa-f: https://public.isaqb.org/examination-foundation/mock_exam/mock-exam-questions-de.pdf
 
