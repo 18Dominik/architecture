@@ -104,7 +104,8 @@ https://thenewstack.io/deployment-strategies/
 10. Quality Requirements: Showcasing scenarios with a quality tree according to Chapter 1 (quality requirements)
 11. Risks and technical debts: Known risks and technical debts
 12. Glossary: Most important domain-specific language, stakeholder-oriented, translations in multi-lingual environments
-![image](https://github.com/18Dominik/architecture/assets/35842490/0bcac792-b889-44af-9714-673f34a80f92)
+![image](https://github.com/18Dominik/architecture/assets/35842490/ceacec6a-2482-4243-a6c8-d4e486a85500)
+
 
 
 ## Books
