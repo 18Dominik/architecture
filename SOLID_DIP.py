@@ -21,7 +21,7 @@
 
 #What is Dependency Injection (DI) and Inversion of Control (IoC)?
 ##Dependency Injection (DI) is a practical technique that implements Dependency Inversion Principle (DIP) and Inversion of Control (IoC). It involves providing the dependent components (usually services, functions,  or objects) to a class or component rather than having the class create them itself.
-## Excursion to IoC: Inversion of control (IoC) is simply providing a callback (reaction) to an event that might happen in a system. In other words, instead of executing some logic directly, we invert the control to that callback whenever a specific event occurs.
+## Excursion to IoC: Inversion of control (IoC aka Hollywood Principle: "Don't call us, we call you", flow is triggered by framework, Framework calls method, not vice versa) is simply providing a callback (reaction) to an event that might happen in a system. In other words, instead of executing some logic directly, we invert the control to that callback whenever a specific event occurs.
 from abc import ABC, abstractmethod
 
 # Abstraction for SalaryCalculator
