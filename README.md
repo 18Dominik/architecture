@@ -66,6 +66,8 @@ Composition: One ***component** contains another vs. Inheritance: Subclasses inh
 
 ### Use/Delegation
 A usage or delegation is a **method or function** call that originates in one component and is handled by another.
+Law of Demeter: "If you delegate, delegate fully!", and "Don't talk to a stranger!". We are trying to prevent something like A.getObjectB().getObjectC().display() this sort of statement is a violation of Law of Demeter.
+https://www.geeksforgeeks.org/law-of-demeter-in-java-principle-of-least-knowledge/
 
 ### Creation/Factory pattern
 factory method allows a class to delegate the creation of objects to subclasses.
