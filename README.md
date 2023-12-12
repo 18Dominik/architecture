@@ -59,6 +59,17 @@ Source: https://www.linkedin.com/pulse/dependency-inversion-principledip-mamata-
 Source: https://www.linkedin.com/pulse/dependency-inversion-principledip-mamata-raote-she-her-/
 
 ## Interface Design/Types of Coupling: 
+Reduce coupling and increase cohesion -> Design Patterns/Gang of Four (GoF, The four authors of the book: Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, have since been dubbed “The Gang of Four”.).
+The GoF Design Patterns are broken into three categories: Creational Design Patterns, Structural Design Patterns, Behavior Design Patterns, e.g.:
+- Dynamically extend components with Decorator Pattern (-> to decorate sth.), Structural: Decorator pattern allows a user to add new functionality to an existing object without altering its structure. This type of design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
+- Adjust interfaces (Structural):
+  - Adapter: Allows for two incompatible classes to work together by wrapping an interface around one of the existing classes.
+  - Bridge: Decouples an abstraction so two classes can vary independently.
+  - Facade: Provides a simple interface to a more complex underlying object.
+- Proxy as a placeholder for another object to encapsulate calls (Structural). Proxy pattern is used when we need to create a wrapper to cover the main object's complexity from the client. See Proxy (protects clients, placed upstream) and Reverse Proxy (protects servers, placed downstream)
+- Observer (Behavioral): Is a publish/subscribe pattern which allows a number of observer objects to see an event.
+
+
 ### Composition over Inheritance Principle
 ![image](https://github.com/18Dominik/architecture/assets/35842490/5bae169e-c286-40fb-9338-3cf3984e40cf)
 Source: https://medium.com/@kamilmasyhur/a-principle-of-object-oriented-design-79b9bfefd446
@@ -71,8 +82,8 @@ https://www.geeksforgeeks.org/law-of-demeter-in-java-principle-of-least-knowledg
 - Acyclic Dependency Principle: defined by Robert C. Martin, states that the dependency graph of packages/building blocks/components should have no cycles.
 - CRC-Cards: Class/Component Name, Responsibility, Collaborators
 
-### Creation/Factory pattern
-factory method allows a class to delegate the creation of objects to subclasses.
+### Creation/Factory pattern (Creational)
+factory method allows a class to delegate the creation of objects to subclasses. Decouple creation of related objects.
 - creating objects without having to specify the exact class of these objects.
 - Objects returned by a factory method are often referred to as products.
 - you can override the factory method in a subclass and change the class of products being created by the method.
