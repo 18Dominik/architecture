@@ -116,7 +116,7 @@ https://thenewstack.io/deployment-strategies/
 7. Distribution Layer: Technical Infrastructure including real and virtual processors
 8. Crosscutting Concepts: Generic principles that are re-used in different parts (Domain Model, Patterns, Persistence, UI/UX, Logging)
 9. Architecture Decisions: Important, critical, risky, or expensive architecture decisions
-10. Quality Requirements: Showcasing scenarios with a quality tree according to Chapter 1 (quality requirements) [ISO 25010:2023]([https://quality.arc42.org/articles/iso-25010-shortcomings](https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en)), [Shortcomings ISO 25010](https://quality.arc42.org/articles/iso-25010-shortcomings), [arc42 quality model](https://quality.arc42.org/)
+10. Quality Requirements: Showcasing scenarios with a quality tree according to Chapter 1 (quality requirements) [ISO 25010:2023]([https://quality.arc42.org/articles/iso-25010-shortcomings](https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en), [Shortcomings ISO 25010](https://quality.arc42.org/articles/iso-25010-shortcomings), [arc42 quality model](https://quality.arc42.org/)
 11. Risks and technical debts: Known risks and technical debts
 12. Glossary: Most important domain-specific language, stakeholder-oriented, translations in multi-lingual environments
 ![image](https://github.com/18Dominik/architecture/assets/35842490/ceacec6a-2482-4243-a6c8-d4e486a85500)
